@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innerpage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-float-label.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@8.2.0/css/mdb.min.css"
+    rel="stylesheet"
+    />
+
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg navbar-light bg-white" style="box-shadow: none;">
+        <div class="d-flex align-items-center">
+            <div class="menu-btn" id="menu-btn">
+                <img class="m-btn" src="images/menu-bar.svg" alt="Menu">
+            </div>
+            <div class="logo-head">
+                <img class="logo" src="images/header-logo.svg" alt="Company Logo">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <img src="images/search-icon.svg" class="srch-logo ms-5 me-2" alt="">
+                <input type="text" class="search-bar" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-items">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <img src="images/notification-icon.svg" alt="Notification">
+            </div>
+            <div class="user-profile">
+                <img src="images/profile.png" alt="User">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <span>John Doe</span>
+                    <img src="images/downward-arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <!-- Layout -->
+    <div class="layout">
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="dashboard.html" class="d-flex">
+                        <img src="images/dashboard-active.svg" alt="">
+                        <p>Dashboard</p>
+                    </a></li>
+                <li><a href="innerpage.html" class="d-flex">
+                        <img src="images/graph-default.svg" alt="">
+                        <p>Analysis</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/inbox-default.svg" alt="">
+                        <p>Inbox</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/clock-default.svg" alt="">
+                        <p>History</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/user-default.svg" alt="">
+                        <p>Users</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/maintenance-default.svg" alt="">
+                        <p>Maintenance</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/setting-default.svg" alt="">
+                        <p>Setting</p>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <p class="ana">Analysis</p>
+            <div class="analysis bg-white pt-3">
+                <div class="one-col mx-4">
+                    <p>One Column</p>
+                    <div class="form-outline mb-3" style="border-radius: 5px;" data-mdb-input-init>
+                        <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                        <label class="form-label bg-white text-secondary" for="formControlLg">Name</label>
+                      </div>
+                    <select class="form-select p-3 mb-3" aria-label="Default select example" style="height: 57px;">
+                        <option selected>Dropdown</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Multiple line</label>
+                    </div>
+                </div>
+                <div class="col-two mx-0">
+                    <p class="my-4 mx-4">Two Column</p>
+                    <div class="text-center">
+                        <div class="row row-cols-2">
+                            <div class="col-lg-6 col-md-12 mb-3 col-12">
+                                <div class="form-outline border" style="border-radius: 5px;" data-mdb-input-init>
+                                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                    <label class="form-label bg-white text-secondary" for="formControlLg">Name</label>
+                                  </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-12 mb-3">
+                                <div class="form-outline" style="border-radius: 5px;" data-mdb-input-init>
+                                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                    <label class="form-label bg-white text-secondary" for="formControlLg">Username</label>
+                                  </div>
+                            </div>
+                            <div class="col-lg-6 mb-3 col-12 col-md-12">
+                                <div class="form-outline border" style="border-radius: 5px;" data-mdb-input-init>
+                                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                    <label class="form-label bg-white text-secondary" for="formControlLg">Password</label>
+                                  </div>
+                            </div>
+                            <div class="col-lg-6 col-12 col-md-12 mb-3">
+                                <select class="form-select" aria-label="Default select example"
+                                    style="height: 46px;">
+                                    <option selected>Dropdown</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three-col">
+                    <p class="ps-4">Three Column</p>
+                    <div class="text-center">
+                        <div class="row row-cols-3">
+                          <div class="col-lg-4 col-12 mb-3"><div class="form-outline border" style="border-radius: 5px;" data-mdb-input-init>
+                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                            <label class="form-label bg-white text-secondary" for="formControlLg">Focus</label>
+                          </div></div>
+                          <div class="col-lg-4 col-12 mb-3"><div class="form-outline border" style="border-radius: 5px;" data-mdb-input-init>
+                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                            <label class="form-label bg-white text-secondary" for="formControlLg">Focus</label>
+                          </div></div>
+                          <div class="col-lg-4 col-12 mb-3"><div class="form-outline border" style="border-radius: 5px;" data-mdb-input-init>
+                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                            <label class="form-label bg-white text-secondary" for="formControlLg">Focus</label>
+                          </div></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="four-col mx-4">
+                    <p>Four Column</p>
+                    <div class="text-center">
+                        <div class="row mx-0">
+                            <div class="col-lg-3 col-12 mb-3">
+                                <div class="form-outline border" style="border-radius: 5px;" data-mdb-input-init>
+                                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                    <label class="form-label bg-white text-secondary" for="formControlLg">Designation</label>
+                                  </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-3">
+                                <div class="form-outline border" style="border-radius: 5px;" data-mdb-input-init>
+                                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                    <label class="form-label bg-white text-secondary" for="formControlLg">Name</label>
+                                  </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-3">
+                                <div class="form-outline border" style="border-radius: 5px;" data-mdb-input-init>
+                                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                    <label class="form-label bg-white text-secondary" for="formControlLg">Username</label>
+                                  </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-3">
+                                <select class="form-select p-3" aria-label="Default select example"
+                                    style="height: 54px; padding-bottom: 5px;">
+                                    <option selected>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-element">
+                    <p class="my-4 f-label other">Other Design Element</p>
+                    <div class="upload">
+                        <p class="f-hd" style="font-size: 16px !important;">File Upload</p>
+                        <div class="d-flex u1">
+                            <div class="file align-content-center position-relative">
+                                <button type="file btn" class="ps-4" href="">Upload</button>
+                                 <input class="upload-file bg-red" type="file" name="" id="" style="opacity: 0;">
+                            </div>
+                            <p class="mx-4">No item selected</p>
+                        </div>
+                    </div>
+                    <div class="radio-btn">
+                        <p class="mt-4 f-hd" style="font-size: 16px !important;">Radio Button</p>
+                        <div class="radio d-flex">
+                            <div class="form-check me-5">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Option 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Option 2
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checks">
+                        <p class="mt-4 f-hd" style="font-size: 16px !important;">Checkbox</p>
+                        <div class="d-flex">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Option 1
+                                </label>
+                            </div>
+                            <div class="form-check sqr">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Option 2
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snackbar" style="max-width: 100; margin-left: -24px;">
+                        <p class="mt-4 f-hd" style="font-size: 16px !important; margin-left: 28px;">Snackbar</p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="alert border-danger text-danger d-flex" role="alert" style="border: 1px solid red;">
+                                    <img src="images/error-icon.svg" alt="">
+                                    This is an error meassage
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="alert border-info text-info d-flex" role="alert" style="border: 1px solid rgb(89, 159, 238);">
+                                    <img src="images/info-icon.svg" alt="">
+                                    This is an information message!
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col">
+                                <div class="alert border-warning text-warning d-flex" role="alert" style="border: 1px solid yellow;">
+                                    <img src="images/warning-icon.svg" alt="">
+                                    This is a warning message!
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="alert border-success text-success d-flex" role="alert" style="border: 1px solid green;">
+                                    <img src="images/success-icon.svg" alt="">
+                                    This is a success message!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-to-action">
+                        <p class="mt-4 f-hd" style="font-size: 16px !important;">Call to action</p>
+                        <button type="button" class="call btn border-danger mx-2" style="box-shadow: none; border: 1px solid red !important;">Primary</button>
+                        <button type="button" class="call btn border-danger mx-2" style="box-shadow: none; border: 1px solid red !important;">Secondary</button>
+                    </div>
+                </div>
+                <!-- Tabs navs -->
+<ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a
+        data-mdb-tab-init
+        class="nav-link active"
+        id="ex1-tab-1"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-1"
+        aria-selected="true"
+        >Tab 1</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        data-mdb-tab-init
+        class="nav-link"
+        id="ex1-tab-2"
+        href="#ex1-tabs-2"
+        role="tab"
+        aria-controls="ex1-tabs-2"
+        aria-selected="false"
+        >Tab 2</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        data-mdb-tab-init
+        class="nav-link"
+        id="ex1-tab-3"
+        href="#ex1-tabs-3"
+        role="tab"
+        aria-controls="ex1-tabs-3"
+        aria-selected="false"
+        >Tab 3</a
+      >
+    </li>
+  </ul>
+  <!-- Tabs navs -->
+  
+  <!-- Tabs content -->
+  <div class="tab-content" id="ex1-content">
+    <div
+      class="tab-pane fade show active"
+      id="ex1-tabs-1"
+      role="tabpanel"
+      aria-labelledby="ex1-tab-1"
+    >
+      Tab 1 content
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+      Tab 2 content
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+      Tab 3 content
+    </div>
+  </div>
+  <!-- Tabs content -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/custom.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@8.2.0/js/mdb.umd.min.js"
+    ></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
